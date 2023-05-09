@@ -32,6 +32,7 @@ form.addEventListener("submit", (e) => {
   tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
   tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
   tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры 
+  document.getElementById("user_id") = `${tg.initDataUnsafe.user.id}`;
 
   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
     if (tg.MainButton.isVisible){ //если кнопка показана 
