@@ -7,7 +7,7 @@ tg.MainButton.setText = ("Canged Text1");
 tg.MainButton.textColor = "#143F6B";
 tg.MainButton.setParams({"color":"#143F6B"});
 
-document.getElementById("user_id") = `${tg.initDataUnsafe.user.id}`;
+document.getElementById("user_id") = `${tg.initData.user.id}`;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
