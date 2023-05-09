@@ -7,6 +7,7 @@ tg.MainButton.setText = ("Canged Text1");
 tg.MainButton.textColor = "#143F6B";
 tg.MainButton.setParams({"color":"#143F6B"});
 
+document.getElementById("user_id") = `${tg.initDataUnsafe.user.id}`;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -33,6 +34,5 @@ form.addEventListener("submit", (e) => {
   tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
   tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры 
 
-  document.getElementById("user_id") = `${tg.initDataUnsafe.user.id}`;
 
 });
