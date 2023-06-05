@@ -10,6 +10,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:kuanysh-kst/WebAppTelegram.git master:gh-pages
+git push -f git@github.com:Kuanysh-kst/WebAppTelegram.git master:gh-pages
 
 cd -
