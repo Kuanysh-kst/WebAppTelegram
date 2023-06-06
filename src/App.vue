@@ -1,18 +1,12 @@
 <template>
-  <h1>Todo application</h1>
-  <AddTodo 
-    @add-todo = "addTodoMethod"
-  />
-  <hr>
-  <TodoList
-    v-bind:todos = "todos"
-    @remove-todo = "removeTodoMethod"
-  />
+  <div>
+    <h1>Todo application</h1>
+    <hr>
+  </div>
+  <router-view />
 </template>
 
 <script>
-import TodoList from './components/TodoList.vue';
-import AddTodo from './components/AddTodo.vue'
 export default {
   name: 'App',
   data() {
@@ -24,18 +18,13 @@ export default {
       ]
     }
   },
-  methods: {
-    removeTodoMethod(id) {
-        this.todos = this.todos.filter(t=> t.id !== id);
-    },
-    addTodoMethod(todo) {
-      this.todos.push(todo);
-    }
-  },
-  components: {
-    TodoList,
-    AddTodo
-  }
+  mounted() {
+    fetch('https://jsonplaceholder.typicode.com/todos?_limit=3')
+      .then(response => response.json())
+      .then(json => {
+        this.todos = json
+    });  
+ },
 }
 </script>
 
