@@ -4,7 +4,7 @@
             <input type="checkbox" 
             @change="toggleCompleted(this.todo)">
             <strong>{{ indexData + 1}}</strong>
-            {{ todo.title }}
+            {{ upperTitle}}
         </span>
         <button class = "rm" @click="$emit('removeTodo',todo.id)">&times;</button>
     </li>
@@ -23,6 +23,11 @@ export default {
     methods: {
         toggleCompleted(todo) {
             todo.completed = !todo.completed;
+        }
+    },
+    computed: {
+        upperTitle() {
+            return this.todo.title.toUpperCase();
         }
     }
 }
