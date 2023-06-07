@@ -9,12 +9,32 @@
         <router-link to="/todos">Todos</router-link>
         <div class="menu-icons">
             <div class="row">
-                <div class="icon-button"></div>
-                <div class="icon-button"></div>
+                <div class="icon-container">
+                    <div class="icon-button">
+                        <img class = "ico" src="../assets/free-icon-font-rocket-lunch-6955751.svg" alt="">
+                    </div>
+                    <h3>Search</h3>
+                </div>
+                <div class="icon-container">
+                    <div class="icon-button">
+                        <img class = "ico" src="../assets/free-icon-font-user-3917688.svg" alt="">
+                    </div>
+                    <h3>Profile</h3>
+                </div>
             </div>
             <div class="row">
-                <div class="icon-button"></div>
-                <div class="icon-button"></div>
+                <div class="icon-container">
+                    <div class="icon-button">
+                        <img class = "ico" src="../assets/free-icon-font-cross-3917759.svg" alt="">
+                    </div>
+                    <h3>Close app</h3>
+                </div>
+                <div class="icon-container">
+                    <div class="icon-button">
+                        <img class = "ico" src="../assets/free-icon-font-settings-3917058.svg" alt="">
+                    </div>
+                    <h3>Settings</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -24,22 +44,42 @@
 .menu-icons {
     height: 400px;
 }
+
 .row {
     display: flex;
-    justify-content: space-between;
     margin-top: 20px;
-    margin: 5%;
-    height: 40%;
+    margin-bottom: 30px;
+    height: 150px;
+    justify-content: space-between;
 }
 
 .icon-button {
-    display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 100%;
+    height: 100%;
     background: white;
     border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Параметры тени */
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+.icon-container {
+    justify-content: space-between;
+    height: 80%;
+    width: 46%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.ico {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 25px;
+
 }
 </style>
