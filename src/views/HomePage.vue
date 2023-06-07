@@ -28,13 +28,14 @@
     justify-content: space-between;
     margin-top: 20px;
     margin: 5%;
+    height: 160px;
 }
 
 .icon-button {
     display: flex;
     flex-direction: column;
-    width: 160px;
-    height: 160px;
+    width: 45%;
+    height: 100%;
     background: white;
     border-radius: 25px;
     justify-content: space-between;
