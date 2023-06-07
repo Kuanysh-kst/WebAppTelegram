@@ -59,7 +59,6 @@ export default {
                 return this.todos.filter(t => !t.completed)
              }
             return this.todos;
-
         }
     },
     components: {
