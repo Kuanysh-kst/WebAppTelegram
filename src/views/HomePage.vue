@@ -8,33 +8,39 @@
 
         <router-link to="/todos">Todos</router-link>
         <div class="menu-icons">
-            <div class="icon-button">
-
+            <div class="row">
+                <div class="icon-button"></div>
+                <div class="icon-button"></div>
             </div>
-            <div class="icon-button"></div>
+            <div class="row">
+                <div class="icon-button"></div>
+                <div class="icon-button"></div>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
 .menu-icons {
+
+}
+.row {
     display: flex;
     justify-content: space-between;
-    height: 300px;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 7%;
 }
 
 .icon-button {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 35%;
-    background: rgba(124, 1, 199, 0.25);
+    width: 160px;
+    height: 160px;
+    background: white;
     border-radius: 25px;
-    padding-top: 20px;
-    padding-bottom: 50px;
     justify-content: space-between;
-    margin-left: 3%;
-    margin-right: 3%;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
 }
 </style>
