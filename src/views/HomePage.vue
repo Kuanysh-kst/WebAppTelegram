@@ -9,32 +9,32 @@
         <router-link to="/todos">Todos</router-link>
         <div class="menu-icons">
             <div class="row">
-                <div class="icon-container">
+                <router-link to="/todos" class="icon-container">
                     <div class="icon-button">
                         <img class = "ico" src="../assets/free-icon-font-rocket-lunch-6955751.svg" alt="">
                     </div>
                     <h3>Search</h3>
-                </div>
-                <div class="icon-container">
+                </router-link>
+                <router-link to="/todos" class="icon-container">
                     <div class="icon-button">
                         <img class = "ico" src="../assets/free-icon-font-user-3917688.svg" alt="">
                     </div>
                     <h3>Profile</h3>
-                </div>
+                </router-link>
             </div>
             <div class="row">
-                <div class="icon-container">
+                <router-link to="/todos" class="icon-container">
                     <div class="icon-button">
                         <img class = "ico" src="../assets/free-icon-font-cross-3917759.svg" alt="">
                     </div>
                     <h3>Close app</h3>
-                </div>
-                <div class="icon-container">
+                </router-link>
+                <router-link to="/todos" class="icon-container">
                     <div class="icon-button">
                         <img class = "ico" src="../assets/free-icon-font-settings-3917058.svg" alt="">
                     </div>
                     <h3>Settings</h3>
-                </div>
+                </router-link>
             </div>
         </div>
     </div>
@@ -63,6 +63,7 @@
     /* Параметры тени */
     justify-content: space-between;
     align-items: center;
+    transition: 0.18s;
 }
 
 .icon-container {
@@ -72,14 +73,14 @@
     margin-right: 20px;
     margin-left: 20px;
 }
-
+    
 .ico {
     width: 50%;
     height: 50%;
     background-color: white;
     margin-right: 10%;
     margin-left: 10%;
-    margin-top: 25px;
+    margin-top: 30px;
 
 }
 </style>
