@@ -22,20 +22,20 @@
 
 <style>
 .menu-icons {
+    height: 400px;
 }
 .row {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin: 5%;
-    height: 160px;
+    height: 40%;
 }
 
 .icon-button {
     display: flex;
     flex-direction: column;
     width: 45%;
-    height: 100%;
     background: white;
     border-radius: 25px;
     justify-content: space-between;
