@@ -22,14 +22,12 @@
 
 <style>
 .menu-icons {
-
 }
 .row {
     display: flex;
     justify-content: space-between;
-    margin-right: 7%;
-    margin-left: 7%;
-    margin-top: 7%;
+    margin-top: 20px;
+    margin: 5%;
 }
 
 .icon-button {
