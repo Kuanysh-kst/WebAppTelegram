@@ -5,3 +5,7 @@
     font-family: "Inter", sans-serif;
     background-color: var(--tg-theme-bg-color);
 }
+
+.svg-icon {
+    fill: red !important;
+}
