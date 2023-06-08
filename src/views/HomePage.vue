@@ -72,7 +72,7 @@ hr {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: var(--tg-theme-bg-color);
+    background-color: var(--tg-theme-bg-color);
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     /* Параметры тени */
