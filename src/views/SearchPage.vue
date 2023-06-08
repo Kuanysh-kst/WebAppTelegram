@@ -1,16 +1,18 @@
 <template>
     <div>
         <BackLine></BackLine>
-        <h1>SearchPage hello!</h1>
+        <VacancyCard></VacancyCard>
     </div>
 </template>
 
 <script>
 import BackLine from '@/components/BackLine.vue';
+import VacancyCard from '@/components/VacancyCard.vue';
 
 export default {
     components: {
-        BackLine
+        BackLine,
+        VacancyCard
     }
 }
 </script>
