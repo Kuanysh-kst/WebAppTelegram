@@ -72,7 +72,7 @@ hr {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: white;
+    background: var(--tg-theme-bg-color);
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     /* Параметры тени */
@@ -99,6 +99,6 @@ hr {
 }
 
 .icon-container h3 {
-    color: black;
+    color: var(--tg-theme-text-color);
     font-size: 16px;
 }</style>
