@@ -22,7 +22,6 @@
     color:var(--tg-theme-text-color);
 }
 .vacancy-city {
-    height: 1px;
     float: left;
     margin-left: 20px;
     margin-top: 20px;
@@ -30,11 +29,9 @@
 }
 
 .job-naming {
-    height: 30px;
 }
 
 .city-naming {
-    height: 30px;
     margin-bottom: 20px;
 }
 
