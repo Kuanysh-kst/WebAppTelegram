@@ -2,6 +2,7 @@
     <div>
         <BackLine></BackLine>
         <VacancyCard></VacancyCard>
+        <VacancyCard></VacancyCard>
     </div>
 </template>
 
