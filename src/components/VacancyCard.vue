@@ -35,8 +35,8 @@
 .check-button {
     padding: 13px 0;
     width: 80%;
-    background-color: blue;
-    /* background-color: var(--tg-theme-button-color); */
+    /* background-color: blue; */
+    background-color: var(--tg-theme-button-color);
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 20px;
