@@ -28,19 +28,15 @@
     color:var(--tg-theme-text-color);
 }
 
-.job-naming {
-}
-
 .city-naming {
     margin-bottom: 20px;
 }
 
 .check-button {
-    padding-top: 13px;
+    padding: 13px 0;
     width: 80%;
-    height: 30px;
-    /* background-color: blue; */
-    background-color: var(--tg-theme-button-color);
+    background-color: blue;
+    /* background-color: var(--tg-theme-button-color); */
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 20px;
@@ -56,7 +52,6 @@
     margin-top: 5%;
     margin-right: 4%;
     margin-left: 4%;
-    height: 180px;
     background-color: var(--tg-theme-bg-color);
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
