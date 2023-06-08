@@ -4,7 +4,7 @@
         <hr>
         <div class="menu-icons">
             <div class="row">
-                <router-link to="/todos" class="icon-container">
+                <router-link to="/search" class="icon-container">
                     <div class="icon-button">
                         <img class="ico" src="../assets/free-icon-font-rocket-lunch-6955751.svg" alt="">
                     </div>
