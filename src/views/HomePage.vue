@@ -79,6 +79,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     transition: 0.18s;
+    fill: var(--tg-theme-text-color);
 }
 
 .icon-container {
@@ -101,4 +102,5 @@ hr {
 .icon-container h3 {
     color: var(--tg-theme-text-color);
     font-size: 16px;
-}</style>
+}
+</style>
