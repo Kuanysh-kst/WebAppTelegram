@@ -2,11 +2,10 @@
     <div>
         <div class="vacancy-card">
             <div class="job-naming">
-                <h4>Work Name</h4>
+                <div class="vacancy-name">Work name</div>
             </div>
             <div class="city-naming">
-                <h6>
-                    Kostanay</h6>
+                <div class="vacancy-city">Kostanay</div>
             </div>
             <div class="check-button">Откликнуться</div>
         </div>
@@ -14,31 +13,37 @@
 </template>
 
 <style>
-.city-naming h6 {
-    height: 1px;
-
-    float: left;
+.vacancy-name {
+    margin-top: 20px;
     margin-left: 20px;
-}
-
-.job-naming h4 {
-    margin-left: 20px;
+    margin-bottom: 20px;
     float: left;
     font-size: 18px;
+    color:var(--tg-theme-text-color);
 }
+.vacancy-city {
+    height: 1px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    color:var(--tg-theme-text-color);
+}
+
 .job-naming {
     height: 30px;
 }
+
 .city-naming {
     height: 30px;
     margin-bottom: 20px;
 }
+
 .check-button {
-    padding-top: 10px;
+    padding-top: 13px;
     width: 80%;
     height: 30px;
-    background-color: blue;
-    /* background-color: var(--tg-theme-button-color); */
+    /* background-color: blue; */
+    background-color: var(--tg-theme-button-color);
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 20px;
@@ -58,5 +63,4 @@
     background-color: var(--tg-theme-bg-color);
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-</style>
+}</style>
