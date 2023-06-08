@@ -2,7 +2,7 @@
     <div>
         <div class="vacancy-card">
             <div class="job-naming">
-                <h4>Cleaning work</h4>
+                <h4>Work Name</h4>
             </div>
             <div class="city-naming">
                 <h6>
@@ -23,16 +23,22 @@
 
 .job-naming h4 {
     margin-left: 20px;
-    height: 1px;
     float: left;
+    font-size: 18px;
 }
-
+.job-naming {
+    height: 30px;
+}
+.city-naming {
+    height: 30px;
+    margin-bottom: 20px;
+}
 .check-button {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 10px;
     width: 80%;
-    height: 20px;
-    background-color: var(--tg-theme-button-color);
+    height: 30px;
+    background-color: blue;
+    /* background-color: var(--tg-theme-button-color); */
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 20px;
@@ -48,7 +54,7 @@
     margin-top: 5%;
     margin-right: 4%;
     margin-left: 4%;
-    height: 130px;
+    height: 180px;
     background-color: var(--tg-theme-bg-color);
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
