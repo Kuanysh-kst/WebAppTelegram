@@ -10,6 +10,9 @@
     "dependencies": {
         "browserify-zlib": "^0.2.0",
         "core-js": "^3.8.3",
+        "loader": "^2.1.1",
+        "sass": "^1.63.2",
+        "sass-loader": "^13.3.1",
         "vue": "^3.2.13",
         "vue-router": "^4.0.13"
     },

@@ -1,0 +1,22 @@
+// Tags
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    font-family: "Inter", sans-serif;
+    background-color: var(--tg-theme-bg-color);
+}
+
+.svg-icon {
+    fill: red !important;
+}
