@@ -45,7 +45,7 @@
     height: 100px;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    border: 4px solid white;
+    border: 4px solid var(--tg-theme-bg-color);
 }
 
 .photo-row {
