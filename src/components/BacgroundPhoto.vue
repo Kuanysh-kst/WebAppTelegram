@@ -1,9 +1,9 @@
 <template>
     <div class="photo-row">
         <div class="photo-container">
-            <img class="back-photo" src="../assets/backgroundPhoto.svg" alt="">
+            <img class="back-photo" src="../assets/paisley-1769549.svg" alt="">
         </div>
-        <img class="top-photo" src="../assets/8137014_1575.jpg" alt="">
+        <img class="top-photo" src="../assets/backgroundPhoto.svg" alt="">
     </div>
 </template>
 
