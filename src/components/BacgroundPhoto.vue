@@ -8,11 +8,6 @@
 </template>
 
 <style>
-.back-photo {
-    position: absolute;
-    align-items: center;
-}
-
 .photo-container {
     position: relative;
     overflow: hidden;

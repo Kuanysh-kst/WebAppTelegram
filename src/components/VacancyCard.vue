@@ -7,7 +7,7 @@
             <div class="city card-text">
                 {{vacancy.cityCardText}}
             </div>
-            <div class="check-button">Откликнуться</div>
+            <div class="check-button">Смотреть</div>
         </div>
     </div>
 </template>
@@ -26,8 +26,6 @@ export default {
 <style>
 .vacancy-card {
     margin-top: 5%;
-    margin-right: 4%;
-    margin-left: 4%;
     background-color: var(--tg-theme-bg-color);
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

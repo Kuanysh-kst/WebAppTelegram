@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <BackLine></BackLine>
         <VacancyCard 
         v-for="vacancy of vacancyies" 

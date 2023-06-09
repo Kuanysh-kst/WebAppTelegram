@@ -14,7 +14,7 @@
                     </div>
                     <h3>Search</h3>
                 </router-link>
-                <router-link to="/todos" class="icon-container">
+                <router-link to="/profile" class="icon-container">
                     <div class="icon-button">
                         <svg class="ico" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512"
                             height="512">
