@@ -1,15 +1,16 @@
 <template>
-    <div class="about">
-
+    <div class="card">
+        <h4 class="card-text">About user</h4>
+        <hr>
+        <div class="card-text about-name">Name: Kuanysh</div>
+        <div class="card-text">City: Kostany</div>
+        <div class="card-text">Job: Cleaning worker</div>
     </div>
 </template>
 
 <style>
-.about {
-    margin-top: 10%;
-    background-color: var(--tg-theme-bg-color);
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+.about-name {
+    margin-top: 5%;
 }
+
 </style>

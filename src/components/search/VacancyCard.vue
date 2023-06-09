@@ -32,12 +32,7 @@ export default {
     padding: 20px;
 }
 
-.card-text {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
-    color: var(--tg-theme-text-color);
-}
+
 
 .job {
     font-size: 20px;
