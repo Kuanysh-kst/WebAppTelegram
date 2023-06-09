@@ -1,6 +1,6 @@
 <template>
     <div class="profile-photo-container">
-        <img class="profile-photo" src="../assets/backgroundPhoto.svg" alt="">
+        <img class="profile-photo" src="@/assets/backgroundPhoto.svg" alt="">
     </div>
 </template>
 

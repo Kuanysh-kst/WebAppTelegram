@@ -3,16 +3,19 @@
         <BackLine />
         <ProfilePhoto />
         <hr>
+        <AboutComponent />
     </div>
 </template>
 
 <script>
-import BackLine from '@/components/BackLine.vue';
-import ProfilePhoto from '@/components/ProfilePhoto.vue'
+import BackLine from '@/components/search/BackLine.vue';
+import ProfilePhoto from '@/components/profile/ProfilePhoto.vue';
+import AboutComponent from '@/components/profile/AboutComponent.vue';
 export default {
     components: {
         BackLine,
-        ProfilePhoto
+        ProfilePhoto,
+        AboutComponent,
     }
 }
 </script>

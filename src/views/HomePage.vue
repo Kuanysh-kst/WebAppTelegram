@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BackgroundPhoto></BackgroundPhoto>
+        <BacgroundPhoto />
         <hr>
         <div class="menu-icons">
             <div class="row">
@@ -53,10 +53,10 @@
 </template>
 
 <script>
-import BackgroundPhoto from '@/components/BacgroundPhoto.vue'
+import BacgroundPhoto from '@/components/home/BacgroundPhoto.vue';
 export default {
     components: {
-        BackgroundPhoto
+        BacgroundPhoto
     }
 }
 </script>

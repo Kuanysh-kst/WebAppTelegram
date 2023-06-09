@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import BackLine from '@/components/BackLine.vue';
-import VacancyCard from '@/components/VacancyCard.vue';
+import BackLine from '@/components/search/BackLine.vue';
+import VacancyCard from '@/components/search/VacancyCard.vue';
 
 export default {
     data() {

@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import TodoList from '@/components/TodoList.vue';
-import AddTodo from '@/components/AddTodo.vue';
-import LoaderImg from '@/components/LoaderImg.vue'
+import TodoList from '@/components/todo/TodoList.vue';
+import AddTodo from '@/components/todo/AddTodo.vue';
+import LoaderImg from '@/components/LoaderImg.vue';
 
 export default {
     name: 'App',
