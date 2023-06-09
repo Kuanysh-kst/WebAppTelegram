@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card exp-card">
         <div class="card-text">Experience</div>
         <hr>
         <div class="exp-text">
@@ -11,6 +11,9 @@
 </template>
 
 <style>
+.exp-card {
+    margin-bottom: 4%;
+}
 .exp-text {
     margin-top: 4%;
     width: 100%;

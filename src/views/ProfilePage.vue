@@ -5,6 +5,7 @@
         <hr>
         <AboutComponent />
         <ExperienceCopmonent />
+        <ActionButton />
     </div>
 </template>
 
@@ -12,14 +13,16 @@
 import BackLine from '@/components/search/BackLine.vue';
 import ProfilePhoto from '@/components/profile/ProfilePhoto.vue';
 import AboutComponent from '@/components/profile/AboutComponent.vue';
-import ExperienceCopmonent from '@/components/profile/ExperienceComponent.vue'
+import ExperienceCopmonent from '@/components/profile/ExperienceComponent.vue';
+import ActionButton from '@/components/buttons/ActionButton.vue';
 
 export default {
     components: {
         BackLine,
         ProfilePhoto,
         AboutComponent,
-        ExperienceCopmonent
+        ExperienceCopmonent,
+        ActionButton
     }
 }
 </script>
