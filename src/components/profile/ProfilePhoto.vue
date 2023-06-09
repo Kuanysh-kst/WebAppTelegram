@@ -8,7 +8,7 @@
 .profile-photo-container {
     position: relative;
     height: 200px;
-    margin-top: 4%;
+    margin-top: 8%;
     margin-bottom: 4%;
 }
 .profile-photo {

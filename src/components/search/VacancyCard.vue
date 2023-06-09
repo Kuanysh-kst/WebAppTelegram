@@ -2,12 +2,12 @@
     <div>
         <div class="vacancy-card">
             <div class="job card-text">
-                {{vacancy.jobCardText}}
+                {{ vacancy.jobCardText }}
             </div>
             <div class="city card-text">
-                {{vacancy.cityCardText}}
+                {{ vacancy.cityCardText }}
             </div>
-            <div class="check-button">Смотреть</div>
+            <router-link to="/profile" class="check-button">Смотреть</router-link>
         </div>
     </div>
 </template>
@@ -47,8 +47,9 @@ export default {
     padding: 13px 0;
     width: 80%;
     background-color: blue;
-    /* background-color: var(--tg-theme-button-color); */
+    background-color: var(--tg-theme-button-color);
     font-size: 10pt;
     border-radius: 15px;
-    /* color: var(--tg-theme-button-text-color); */
-}</style>
+    color: var(--tg-theme-button-text-color);
+}
+</style>

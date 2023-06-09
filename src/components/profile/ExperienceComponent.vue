@@ -14,5 +14,6 @@
 .exp-text {
     margin-top: 4%;
     width: 100%;
+    color: var(--tg-theme-text-color);
 }
 </style>
