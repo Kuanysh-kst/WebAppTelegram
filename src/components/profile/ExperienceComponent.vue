@@ -18,5 +18,6 @@
     margin-top: 4%;
     width: 100%;
     color: var(--tg-theme-text-color);
+    margin-bottom: 4%;
 }
 </style>
