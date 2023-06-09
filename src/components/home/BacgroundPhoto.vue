@@ -8,6 +8,9 @@
 </template>
 
 <style>
+.photo-row {
+    position: relative;
+}
 .photo-container {
     position: relative;
     overflow: hidden;
@@ -19,18 +22,11 @@
     border-radius: 20px;
     position: absolute;
     top: 50%;
-    width: 90%;
+    width: 100%;
     height: 100%;
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
-
-.top-container {
-    overflow: hidden;
-    margin-bottom: 70px;
-    position: absolute;
-}
-
 .top-photo {
     position: absolute;
     top: -150px;
@@ -42,8 +38,9 @@
     object-fit: cover;
     border: 6px solid var(--tg-theme-bg-color);
 }
-
-.photo-row {
-    position: relative;
+.top-container {
+    overflow: hidden;
+    margin-bottom: 70px;
+    position: absolute;
 }
 </style>

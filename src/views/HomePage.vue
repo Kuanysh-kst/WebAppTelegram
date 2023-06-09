@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <BacgroundPhoto />
         <hr>
         <div class="menu-icons">
@@ -81,7 +81,6 @@ hr {
     display: flex;
     margin-top: 20px;
     margin-bottom: 30px;
-    height: 150px;
     justify-content: space-between;
 }
 
@@ -96,12 +95,13 @@ hr {
     justify-content: space-between;
     align-items: center;
     transition: 0.18s;
+    padding-bottom: 20%;
 }
 
 .icon-container {
     justify-content: space-between;
-    height: 80%;
-    width: 46%;
+    height: 100%;
+    width: 100%;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -117,6 +117,7 @@ hr {
 }
 
 .icon-container h3 {
+    margin-top: 8%;
     color: var(--tg-theme-text-color);
     font-size: 16px;
 }</style>

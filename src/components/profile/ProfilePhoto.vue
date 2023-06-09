@@ -9,6 +9,7 @@
     position: relative;
     height: 200px;
     margin-top: 4%;
+    margin-bottom: 4%;
 }
 .profile-photo {
     border-radius: 20px;
