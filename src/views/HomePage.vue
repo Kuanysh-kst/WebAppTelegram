@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <BacgroundPhoto />
+        <BackgroundPhoto />
         <hr>
         <div class="menu-icons">
             <div class="row">
@@ -14,7 +14,7 @@
                     </div>
                     <h3>Search</h3>
                 </router-link>
-                <router-link to="/profile" class="icon-container">
+                <router-link to="/parametrs" class="icon-container">
                     <div class="icon-button">
                         <svg class="ico" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512"
                             height="512">
@@ -23,7 +23,7 @@
                                 d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z" />
                         </svg>
                     </div>
-                    <h3>Profile</h3>
+                    <h3>Parametrs</h3>
                 </router-link>
             </div>
             <div class="row">
@@ -53,10 +53,10 @@
 </template>
 
 <script>
-import BacgroundPhoto from '@/components/home/BacgroundPhoto.vue';
+import BackgroundPhoto from '@/components/home/BackgroundPhoto.vue';
 export default {
     components: {
-        BacgroundPhoto
+        BackgroundPhoto
     }
 }
 </script>

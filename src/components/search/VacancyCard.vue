@@ -32,8 +32,6 @@ export default {
     padding: 20px;
 }
 
-
-
 .job {
     font-size: 20px;
 }

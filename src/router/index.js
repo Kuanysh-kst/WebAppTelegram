@@ -3,26 +3,32 @@ import HomePage from '../views/HomePage.vue';
 import Todos from '../views/Todos.vue';
 import SearchPage from '../views/SearchPage.vue'
 import ProfilePage from "@/views/ProfilePage.vue";
+import ParametrsPage from "@/views/ParametrsPage.vue";
 
 const routes = [{
         path: '/',
-        name: "Home",
+        name: 'Home',
         component: HomePage
     },
     {
         path: '/todos',
-        name: "Todos",
+        name: 'Todos',
         component: Todos
     },
     {
         path: '/search',
-        name: "Search",
+        name: 'Search',
         component: SearchPage
     },
     {
         path: '/profile',
-        name: "Profile",
+        name: 'Profile',
         component: ProfilePage
+    },
+    {
+        path: '/parametrs',
+        name: 'Parametrs',
+        component: ParametrsPage
     }
 ];
 
