@@ -2,15 +2,10 @@
     <div class="add-photo-container card">
         <div class="add-photo-text card-text">Add photo</div>
         <hr>
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <path
-                d="M13 4H8.8C7.11984 4 6.27976 4 5.63803 4.32698C5.07354 4.6146 4.6146 5.07354 4.32698 5.63803C4 6.27976 4 7.11984 4 8.8V15.2C4 16.8802 4 17.7202 4.32698 18.362C4.6146 18.9265 5.07354 19.3854 5.63803 19.673C6.27976 20 7.11984 20 8.8 20H15.2C16.8802 20 17.7202 20 18.362 19.673C18.9265 19.3854 19.3854 18.9265 19.673 18.362C20 17.7202 20 16.8802 20 15.2V11"
-                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path
-                d="M4 16L8.29289 11.7071C8.68342 11.3166 9.31658 11.3166 9.70711 11.7071L13 15M13 15L15.7929 12.2071C16.1834 11.8166 16.8166 11.8166 17.2071 12.2071L20 15M13 15L15.25 17.25"
-                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M18.5 3V5.5M18.5 8V5.5M18.5 5.5H16M18.5 5.5H21" stroke="#000000" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
+                d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zM23 15h-6v-6c0-0.552-0.448-1-1-1s-1 0.448-1 1v6h-6c-0.552 0-1 0.448-1 1s0.448 1 1 1h6v6c0 0.552 0.448 1 1 1s1-0.448 1-1v-6h6c0.552 0 1-0.448 1-1s-0.448-1-1-1z">
+            </path>
         </svg>
     </div>
 </template>
@@ -22,7 +17,7 @@
 }
 
 .add-photo-container svg {
-    width: 30%;
+    width: 20%;
     background-color: var(--tg-theme-bg-color);
     fill: var(--tg-theme-text-color);
 }
