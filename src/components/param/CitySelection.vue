@@ -1,6 +1,6 @@
 <template>
-    <div class="custom-select-role city-select">
-        <select>
+    <div >
+        <select class="custom-select-role">
             <option>none</option>
             <option value="Kostanay">Kostanay</option>
             <option value="Astana">Astana</option>

@@ -1,6 +1,6 @@
 <template>
-    <div class="custom-select-role">
-        <select>
+    <div >
+        <select class="custom-select-role">
             <option>none</option>
             <option value="work in cafe">work in cafe</option>
             <option value="delivery work">delivery work</option>
