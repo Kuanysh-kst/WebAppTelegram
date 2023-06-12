@@ -61,10 +61,13 @@ import NameBlock from '@/components/home/NameBlock.vue'
 export default {
     data() {
         return {
-            tg: window.Telegram.WebApp,
+            tg: Object,
             loading: true,
             filter: 'all'
         }
+    },
+    mounted() {
+        this.tg = window.Telegram.WebApp;
     },
     computed: {
         getTgUserName() {
