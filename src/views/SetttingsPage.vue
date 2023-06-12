@@ -1,7 +1,11 @@
 <template>
     <div class="container">
         <BackLine />
-        <div class="card delete-prof-card">Delete profile</div>
+        <div class="card delete-prof-card">
+            <h4>
+                Delete profile
+            </h4>
+        </div>
         <AddBackPhotoSetting />
     </div>
 </template>
@@ -10,15 +14,15 @@
 import BackLine from '@/components/search/BackLine.vue';
 import AddBackPhotoSetting from '@/components/settings/AddBackPhotoSetting.vue';
 export default {
-components: {
-    BackLine,
-    AddBackPhotoSetting                
-}
+    components: {
+        BackLine,
+        AddBackPhotoSetting
+    }
 }
 </script>
 
 <style>
-.delete-prof-card {
-padding-bottom: 4%;
+.delete-prof-card h4{
+    padding-bottom: 4%;
 }
 </style>

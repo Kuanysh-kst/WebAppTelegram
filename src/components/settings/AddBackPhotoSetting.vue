@@ -1,6 +1,6 @@
 <template>
         <div class="add-back-photo-container card">
-        <div class="add-back-photo-text card-text">Add photo</div>
+        <div class="add-back-photo-text card-text">Add Background photo</div>
         <hr>
         <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -19,5 +19,6 @@
     width: 20%;
     background-color: var(--tg-theme-bg-color);
     fill: var(--tg-theme-text-color);
+    margin-bottom: 4%;
 }
 </style>

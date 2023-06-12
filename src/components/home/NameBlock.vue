@@ -12,5 +12,6 @@ export default {
 .name-block {
     width: 100%;
     margin-bottom: 4%;
+    color: var(--tg-theme-text-color);
 }
 </style>

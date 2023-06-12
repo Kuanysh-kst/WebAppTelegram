@@ -20,5 +20,8 @@
     width: 20%;
     background-color: var(--tg-theme-bg-color);
     fill: var(--tg-theme-text-color);
+    margin-bottom: 4%;
 }
+
+
 </style>
