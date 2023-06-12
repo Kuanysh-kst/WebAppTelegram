@@ -1,6 +1,9 @@
 <template>
     <div class="container">
         <BackgroundPhoto />
+        <NameBlock 
+        v-bind:tg-first-name="getTgUserName"
+        />
         <hr>
         <div class="menu-icons">
             <div class="row">
@@ -54,9 +57,23 @@
 
 <script>
 import BackgroundPhoto from '@/components/home/BackgroundPhoto.vue';
+import NameBlock from '@/components/home/NameBlock.vue'
 export default {
+    data() {
+        return {
+            tg: window.Telegram.WebApp,
+            loading: true,
+            filter: 'all'
+        }
+    },
+    computed: {
+        getTgUserName() {
+            return this.tg.initDataUnsafe.first_name;
+        }
+    },
     components: {
-        BackgroundPhoto
+        BackgroundPhoto,
+        NameBlock
     }
 }
 </script>
