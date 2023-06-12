@@ -40,7 +40,7 @@
 .line {
     width: 100%;
     height: 50px;
-    /* background-color: var(--tg-theme-button-color); */
-    background-color: blue;
+    background-color: var(--tg-theme-button-color);
+    /* background-color: blue; */
     border-radius: 20px;
 }</style>

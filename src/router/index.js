@@ -1,9 +1,10 @@
 import { createWebHistory, createRouter } from "vue-router";
 import HomePage from '../views/HomePage.vue';
 import Todos from '../views/Todos.vue';
-import SearchPage from '../views/SearchPage.vue'
+import SearchPage from '../views/SearchPage.vue';
 import ProfilePage from "@/views/ProfilePage.vue";
 import ParametrsPage from "@/views/ParametrsPage.vue";
+import SetttingsPage from "@/views/SetttingsPage.vue";
 
 const routes = [{
         path: '/',
@@ -29,6 +30,11 @@ const routes = [{
         path: '/parametrs',
         name: 'Parametrs',
         component: ParametrsPage
+    },
+    {
+        path: '/settings',
+        name: 'Settings',
+        component: SetttingsPage
     }
 ];
 
