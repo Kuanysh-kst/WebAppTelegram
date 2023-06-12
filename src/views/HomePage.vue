@@ -74,7 +74,7 @@ export default {
     mounted() {
         if (window.Telegram && window.Telegram.WebApp) {
             this.tg = window.Telegram.WebApp;
-            this.tgUserName = this.tg.initDataUnsafe.first_name;
+            this.tgUserName = this.tg.initDataUnsafe.user.first_name;
         } else {
             console.error("Telegram WebApp не доступен.");
         }
