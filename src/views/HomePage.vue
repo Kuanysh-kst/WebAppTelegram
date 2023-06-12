@@ -63,7 +63,7 @@ import NameBlock from '@/components/home/NameBlock.vue'
 export default {
     data() {
         return {
-            tg: Object,
+            tg: [],
             loading: true,
             filter: 'all'
         }
