@@ -1,10 +1,9 @@
 <template>
-    <div class="name-block">{{ userNameData }}</div>
+    <div class="name-block">name</div>
 </template>
 
 <script>
 export default {
-    props: ['userNameData']
 } 
 </script>
 

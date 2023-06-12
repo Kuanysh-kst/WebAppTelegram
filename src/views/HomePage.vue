@@ -2,10 +2,8 @@
     <div class="container">
         <BackgroundPhoto />
         <NameBlock 
-        v-bind:userNameData="getTgUserName"
         />
-        <h4>{{ getTgUserName }}</h4>
-        <h4>{{ this.tg.initDataUnsafe.first_name }}</h4>
+        <h4>{{ this.tgUserName}}</h4>
         <hr>
         <div class="menu-icons">
             <div class="row">
@@ -64,17 +62,17 @@ export default {
     data() {
         return {
             tg: [],
+            tgUserName: "",
             loading: true,
             filter: 'all'
         }
     },
     mounted() {
         this.tg = window.Telegram.WebApp;
+        this.tgUserName = tg.initDataUnsafe.first_name;
     },
     computed: {
-        getTgUserName() {
-            return this.tg.initDataUnsafe.first_name;
-        }
+
     },
     components: {
         BackgroundPhoto,
