@@ -1,8 +1,7 @@
 <template>
     <div class="container">
         <BackgroundPhoto />
-        <NameBlock />
-        <h4>{{ this.tgUserName }}</h4>
+        <NameBlock v-bind:userNameData="tgUserName" />
         <hr>
         <div class="menu-icons">
             <div class="row">
@@ -29,7 +28,7 @@
                 </router-link>
             </div>
             <div class="row">
-                <router-link to="/todos" class="icon-container">
+                <div @click="closeWebApp" to="/todos" class="icon-container">
                     <div class="icon-button">
                         <svg class="ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.021 512.021"
@@ -42,7 +41,7 @@
                         </svg>
                     </div>
                     <h3>Close app</h3>
-                </router-link>
+                </div>
                 <router-link to="/settings" class="icon-container">
                     <div class="icon-button">
                         <svg class="ico" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512"
@@ -69,6 +68,13 @@ export default {
             tgUserName: "",
             loading: true,
             filter: 'all'
+        }
+    },
+    methods: {
+        closeWebApp() {
+            if (window.Telegram && window.Telegram.WebApp) {
+                window.Telegram.WebApp.quit();
+            }
         }
     },
     mounted() {
@@ -148,4 +154,5 @@ hr {
     margin-top: 8%;
     color: var(--tg-theme-text-color);
     font-size: 16px;
-}</style>
+}
+</style>
