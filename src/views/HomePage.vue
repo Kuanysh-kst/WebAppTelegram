@@ -4,6 +4,8 @@
         <NameBlock 
         v-bind:userNameData="getTgUserName"
         />
+        <h4>{{ getTgUserName }}</h4>
+        <h4>{{ this.tg.initDataUnsafe.first_name }}</h4>
         <hr>
         <div class="menu-icons">
             <div class="row">
