@@ -2,7 +2,7 @@
     <div class="container">
         <BackgroundPhoto />
         <NameBlock 
-        v-bind:tg-first-name="getTgUserName"
+        v-bind:userNameData="getTgUserName"
         />
         <hr>
         <div class="menu-icons">

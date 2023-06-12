@@ -1,10 +1,10 @@
 <template>
-<div class="name-block">{{ tg-first-name }}</div>
+    <div class="name-block">{{ userNameData }}</div>
 </template>
 
 <script>
 export default {
-    props: ['tg-first-name']
+    props: ['userNameData']
 } 
 </script>
 
@@ -13,5 +13,4 @@ export default {
     width: 100%;
     margin-bottom: 4%;
 }
-
 </style>
