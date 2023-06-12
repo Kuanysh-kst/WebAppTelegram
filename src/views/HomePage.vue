@@ -73,7 +73,7 @@ export default {
     methods: {
         closeWebApp() {
             if (window.Telegram && window.Telegram.WebApp) {
-                this.tg.user.close();
+                this.tg.close();
             }
         }
     },
