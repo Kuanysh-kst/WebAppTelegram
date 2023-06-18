@@ -19,12 +19,14 @@ const routes = [{
     {
         path: '/search',
         name: 'Search',
-        component: SearchPage
+        component: SearchPage,
+        props: true
     },
     {
         path: '/profile',
         name: 'Profile',
-        component: ProfilePage
+        component: ProfilePage,
+        props: true
     },
     {
         path: '/parametrs',

@@ -2,7 +2,7 @@
     <div class="container">
         <BackLine></BackLine>
         <VacancyCard 
-        v-for="vacancy of vacancyies" 
+        v-for="vacancy of getCategoryUsers" 
         :key="vacancy.id"
         v-bind:vacancy="vacancy"
         ></VacancyCard>
@@ -13,15 +13,29 @@
 import BackLine from '@/components/search/BackLine.vue';
 import VacancyCard from '@/components/search/VacancyCard.vue';
 
+
 export default {
     data() {
         return {
-            vacancyies: [
-                {id: 1 , jobCardText: "Работа грузчиком", cityCardText: "Костанай"},
-                {id: 2 , jobCardText: "Работа не грузчиком", cityCardText: "Костанай"},
-                {id: 3 , jobCardText: "Работа водителем", cityCardText: "Костанай"},
-                {id: 4 , jobCardText: "Работа грузчиком и водителем снегоуборочной машины", cityCardText: "Костанай"},
-            ]
+            tg: null,
+            id: 928437440,
+            firstName:null,
+            category:null,
+            about:null
+        }
+    },
+    created() {
+        this.$store.dispatch("GET_CATEGORY_USERS",this.id);
+    },
+    mounted() {
+        this.tg = window.Telegram.WebApp;
+        this.userId = this.tg.initDataUnsafe.user.id;
+        console.log("it's mounted");
+
+    },
+    computed: {
+        getCategoryUsers(){
+            return this.$store.getters.CATEGORY_USERS;
         }
     },
     components: {

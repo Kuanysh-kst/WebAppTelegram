@@ -2,12 +2,18 @@
     <div>
         <div class="vacancy-card">
             <div class="job card-text">
-                {{ vacancy.jobCardText }}
+                {{ vacancy.category }}
             </div>
             <div class="city card-text">
-                {{ vacancy.cityCardText }}
+                {{ vacancy.chatId }}
             </div>
-            <router-link to="/profile" class="check-button">Смотреть</router-link>
+            <router-link :to="{
+                name: 'Profile',
+                query: {
+                    name: vacancy.firstName,
+                    category: vacancy.category
+                                }
+            }" class="check-button">Смотреть</router-link>
         </div>
     </div>
 </template>

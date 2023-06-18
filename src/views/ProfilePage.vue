@@ -3,7 +3,7 @@
         <BackLine />
         <ProfilePhoto />
         <hr>
-        <AboutComponent />
+        <AboutComponent v-bind:name=getName v-bind:category=getCategory />
         <ExperienceCopmonent />
         <ActionButton />
     </div>
@@ -23,6 +23,17 @@ export default {
         AboutComponent,
         ExperienceCopmonent,
         ActionButton
+    },
+    computed: {
+        getName() {
+            return this.$route.query.name
+        },
+        getCategory() {
+            return this.$route.query.category
+        }
+    },
+    mounted() {
+        console.log("it's profile mounted");
     }
 }
 </script>
