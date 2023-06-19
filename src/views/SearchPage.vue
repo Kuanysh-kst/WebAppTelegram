@@ -18,7 +18,7 @@ export default {
     data() {
         return {
             tg: null,
-            id: 928437440,
+            id: Number,
             firstName:null,
             category:null,
             about:null
@@ -26,7 +26,8 @@ export default {
     },
     created() {
         this.tg = window.Telegram.WebApp;
-        this.$store.dispatch("GET_CATEGORY_USERS",this.tg.initDataUnsafe.user.id);
+        this.id = this.tg.initDataUnsafe.user.id;
+        this.$store.dispatch("GET_CATEGORY_USERS",this.id);
     },
     mounted() {
 
