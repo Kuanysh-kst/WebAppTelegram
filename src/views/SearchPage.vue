@@ -25,11 +25,12 @@ export default {
         }
     },
     created() {
+        this.tg = window.Telegram.WebApp;
+        this.id = this.tg.initDataUnsafe.user.id;
         this.$store.dispatch("GET_CATEGORY_USERS",this.id);
     },
     mounted() {
-        this.tg = window.Telegram.WebApp;
-        this.userId = this.tg.initDataUnsafe.user.id;
+
         console.log("it's mounted");
 
     },
