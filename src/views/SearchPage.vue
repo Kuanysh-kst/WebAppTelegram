@@ -2,7 +2,7 @@
     <div class="container">
         <BackLine></BackLine>
         <VacancyCard 
-        v-for="vacancy of getCategoryUsers" 
+        v-for="vacancy of getCategoryUser" 
         :key="vacancy.id"
         v-bind:vacancy="vacancy"
         ></VacancyCard>
@@ -17,25 +17,23 @@ import VacancyCard from '@/components/search/VacancyCard.vue';
 export default {
     data() {
         return {
-            tg: null,
-            id: Number,
+            id: this.$route.query.id,
             firstName:null,
             category:null,
             about:null
         }
     },
     created() {
-
+        this.$store.dispatch("GET_CATEGORY_USERS",this.id);
     },
     mounted() {
-        this.tg = window.Telegram.WebApp;
-        this.id = this.tg.initDataUnsafe.user.id;
-        this.$store.dispatch("GET_CATEGORY_USERS",this.id);
+
+        this.userId = 928437440;
         console.log("it's mounted");
 
     },
     computed: {
-        getCategoryUsers(){
+        getCategoryUser(){
             return this.$store.getters.CATEGORY_USERS;
         }
     },
