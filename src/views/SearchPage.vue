@@ -26,8 +26,7 @@ export default {
     },
     created() {
         this.tg = window.Telegram.WebApp;
-        this.id = this.tg.initDataUnsafe.user.id;
-        this.$store.dispatch("GET_CATEGORY_USERS",this.id);
+        this.$store.dispatch("GET_CATEGORY_USERS",this.tg.initDataUnsafe.user.id);
     },
     mounted() {
 
