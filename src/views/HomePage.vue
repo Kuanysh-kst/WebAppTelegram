@@ -5,12 +5,7 @@
         <hr>
         <div class="menu-icons">
             <div class="row">
-                <router-link :to="{
-                    name: 'Search',
-                    query: {
-                        id: this.tg.initDataUnsafe.user.id
-                    }
-                }" class="icon-container">
+                <router-link to="/search" class="icon-container">
                     <div class="icon-button">
                         <svg class="ico" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
                             viewBox="0 0 24 24" width="512" height="512">
@@ -83,7 +78,7 @@ export default {
         }
     },
     mounted() {
-        console.log("it's mounted");
+            console.log("it's mounted");
         if (window.Telegram && window.Telegram.WebApp) {
             this.tg = window.Telegram.WebApp;
             this.tgUserName = this.tg.initDataUnsafe.user.first_name;

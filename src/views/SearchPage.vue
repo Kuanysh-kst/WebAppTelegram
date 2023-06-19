@@ -17,7 +17,7 @@ import VacancyCard from '@/components/search/VacancyCard.vue';
 export default {
     data() {
         return {
-            id: this.$route.query.id,
+            id: 928437440,
             firstName:null,
             category:null,
             about:null
