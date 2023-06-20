@@ -5,13 +5,15 @@
                 {{ vacancy.category }}
             </div>
             <div class="city card-text">
-                {{ vacancy.chatId }}
+                {{ vacancy.firstName }}
             </div>
             <router-link :to="{
                 name: 'Profile',
                 query: {
                     name: vacancy.firstName,
-                    category: vacancy.category
+                    category: vacancy.category,
+                    photo: vacancy.file,
+                    about: vacancy.about
                                 }
             }" class="check-button">Смотреть</router-link>
         </div>

@@ -4,8 +4,7 @@
         <ProfilePhoto />
         <hr>
         <AboutComponent v-bind:name=getName v-bind:category=getCategory />
-        <ExperienceCopmonent />
-        <ActionButton />
+        <ExperienceCopmonent v-bind:about = getAbout />
     </div>
 </template>
 
@@ -14,7 +13,6 @@ import BackLine from '@/components/search/BackLine.vue';
 import ProfilePhoto from '@/components/profile/ProfilePhoto.vue';
 import AboutComponent from '@/components/profile/AboutComponent.vue';
 import ExperienceCopmonent from '@/components/profile/ExperienceComponent.vue';
-import ActionButton from '@/components/buttons/ActionButton.vue';
 
 export default {
     components: {
@@ -22,14 +20,16 @@ export default {
         ProfilePhoto,
         AboutComponent,
         ExperienceCopmonent,
-        ActionButton
     },
     computed: {
         getName() {
-            return this.$route.query.name
+            return this.$route.query.name;
         },
         getCategory() {
-            return this.$route.query.category
+            return this.$route.query.category;
+        },
+        getAbout() {
+            return this.$route.query.about
         }
     },
     mounted() {

@@ -1,6 +1,6 @@
 <template>
     <div class="text-fields card">
-            <label class="text-field__label" for="login">User name</label>
+            <label class="text-field__label tg-text-color" for="login">User name</label>
             <hr>
             <input class="text-field__input" type="text" name="login" placeholder="Enter the user name" value="itchief">
     </div>

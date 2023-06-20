@@ -7,7 +7,6 @@
         <JobSelection />
         <RoleSelection />
         <CitySelection />
-        <SaveButton />
     </div>
 </template>
 
@@ -19,7 +18,6 @@ import AddPhotoParam from '@/components/param/AddPhotoParam.vue';
 import JobSelection from '@/components/param/JobSelection.vue';
 import RoleSelection from '@/components/param/RoleSelection.vue';
 import CitySelection from '@/components/param/CitySelection.vue';
-import SaveButton from '@/components/buttons/SaveButton.vue';
 export default {
     components: {
     BackLine,
@@ -29,7 +27,6 @@ export default {
     JobSelection,
     RoleSelection,
     CitySelection,
-    SaveButton
 }
 }
 </script>

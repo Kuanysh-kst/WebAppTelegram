@@ -3,12 +3,17 @@
         <div class="card-text">Experience</div>
         <hr>
         <div class="exp-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque nam adipisci ut laborum repellendus,
-            repellat commodi error, dignissimos amet cumque est. Voluptatem, ipsam aliquid. Ex, veniam eos! Vero, nesciunt.
+            {{ this.about }}
         </div>
 
     </div>
 </template>
+
+<script>
+export default {
+    props: ['about']
+}
+</script>
 
 <style>
 .exp-card {

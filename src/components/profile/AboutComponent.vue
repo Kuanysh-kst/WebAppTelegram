@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    props:['name','category']
+    props:['name','category,about']
 }
 </script>
 
