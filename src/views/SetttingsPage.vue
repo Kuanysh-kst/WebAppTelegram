@@ -2,7 +2,7 @@
     <div class="container">
         <BackLine />
         <div class="card delete-prof-card">
-            <h4>
+            <h4 class="tg-text-color">
                 Delete profile
             </h4>
         </div>
