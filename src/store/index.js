@@ -24,7 +24,7 @@ const store = createStore({
 
     actions: {
         GET_CATEGORY_USERS: async ({commit},id) => {
-            axios.get(`http://localhost:8080/search/${id}`)
+            axios.get(`https://tg-kst-07e43a5055c8.herokuapp.com/search/${id}`)
                 .then(respnose =>{
                     commit('SET_CATEGORY_USERS',respnose.data);
                     console.log(respnose.data)
